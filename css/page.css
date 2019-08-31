@@ -1,0 +1,27 @@
+.page-container {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  margin: 0 0 0 50px;
+  padding: 20px;
+}
+
+.vehicles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.head .page-title {
+  font-size: 24px;
+}

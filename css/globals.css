@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+  font-family: Roboto;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}

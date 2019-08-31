@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gerenciando seus Veículos!</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="page-container">
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <ul>
+          <li class="fix-menu">
+            <a href="#" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-tachometer-alt"></i>
+              Painel
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-truck"></i>
+              Veículos
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-sign-out-alt"></i>
+              Sair
+            </a>
+          </li>
+
+          <li>
+            <div class="avatar">
+              <img src="img/user.png" alt="Avatar do usuário" width="30px" />
+              Nícolas
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content"></div>
+    </div>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>

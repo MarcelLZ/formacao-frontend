@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gerenciando seus Veículos!</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+
+    <!-- Shareable -->
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+
+    <!-- Specific -->
+    <link rel="stylesheet" href="css/new-vehicle.css" />
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="page-container">
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <ul>
+          <li class="fix-menu">
+            <a href="#" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-tachometer-alt"></i>
+              Painel
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-users"></i>
+              Clientes
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-truck"></i>
+              Veículos
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-sign-out-alt"></i>
+              Sair
+            </a>
+          </li>
+
+          <li>
+            <div class="avatar">
+              <img src="img/user.png" alt="Avatar do usuário" width="30px" />
+              Nícolas
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <form class="new-vehicle">
+          <fieldset>
+            <legend>
+              Dados do veículo
+            </legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="cliente">Qual o cliente?</label>
+                <select name="cliente" id="cliente">
+                  <option value="">Sr. João da Silva</option>
+                  <option value="">Sra. Joana Linhares</option>
+                  <option value="">Sr. Luiz de Melo</option>
+                  <option value="">Sr. Pedro de Alcantara</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="marca">Qual a marca do veículo?</label>
+                <select name="marca" id="marca">
+                  <option value="">Chevrolet</option>
+                  <option value="">Honda</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="modelo">Qual o modelo do veículo?</label>
+                <select name="modelo" id="modelo">
+                  <option value="">Cruze Hatch</option>
+                  <option value="">Astra</option>
+                  <option value="">Gol G3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="placa">Placa</label>
+                <input type="text" name="placa" id="placa" />
+              </div>
+
+              <div class="field">
+                <label for="cor">Cor</label>
+                <input type="text" name="cor" id="cor" />
+              </div>
+
+              <div class="field">
+                <label for="ano">Ano</label>
+                <input type="number" name="ano" id="ano" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="km">Quilometragem (km)</label>
+                <input type="number" name="km" id="km" />
+              </div>
+
+              <div class="field">
+                <label for="foto">Imagem do Veículo</label>
+                <input type="file" name="imagem" id="imagem" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <textarea
+                  name="observacoes"
+                  id="observacoes"
+                  placeholder="Alguma observação?"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="row actions">
+              <div class="field">
+                <button type="button" class="button">Salvar</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>

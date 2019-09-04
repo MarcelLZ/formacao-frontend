@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gerenciando seus Veículos!</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+
+    <!-- Specific -->
+    <link rel="stylesheet" href="css/customers.css" />
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="page-container">
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <ul>
+          <li class="fix-menu">
+            <a href="#" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-tachometer-alt"></i>
+              Painel
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-users"></i>
+              Clientes
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-truck"></i>
+              Veículos
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-sign-out-alt"></i>
+              Sair
+            </a>
+          </li>
+
+          <li>
+            <div class="avatar">
+              <img src="img/user.png" alt="Avatar do usuário" width="30px" />
+              Nícolas
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <form class="customers">
+          <fieldset>
+            <legend>Dados do cliente</legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados de endereço</legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="state">Estado</label>
+                <select name="state" id="state">
+                  <option value="">Santa Catarina</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="city">Cidade</label>
+                <select name="city" id="city">
+                  <option value="">Blumenau</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="street">Rua</label>
+                <input type="text" name="street" id="street" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="neighborhood">Bairro</label>
+                <input type="text" name="neighborhood" id="neighborhood" />
+              </div>
+
+              <div class="field">
+                <label for="number">Número</label>
+                <input type="text" name="number" id="number" />
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row actions">
+            <div class="field">
+              <button type="button" class="button">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>

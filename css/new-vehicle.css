@@ -1,0 +1,17 @@
+.new-vehicle {
+  padding: 20px;
+  background-color: #fff;
+
+  -webkit-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+}
+
+.new-vehicle .row {
+  border-bottom: 1px solid #ccc;
+}
+
+.new-vehicle .actions {
+  justify-content: flex-end;
+  /* background-color: #ccc; */
+}

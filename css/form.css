@@ -1,0 +1,37 @@
+legend {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.field {
+  margin: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.field label {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+  width: 100%;
+}
+
+.field input {
+  padding: 6px;
+}
+
+form .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form textarea {
+  box-sizing: border-box;
+  min-width: 500px;
+  min-height: 150px;
+}
+
+form select {
+  height: 30px;
+}

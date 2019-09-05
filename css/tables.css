@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+thead th {
+  padding: 10px;
+  border-bottom: 2px solid #000;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+}
+
+tbody tr:hover {
+  background-color: #ccc;
+}

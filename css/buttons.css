@@ -4,9 +4,25 @@
   right: 10px;
   padding: 14px 16px;
   border-radius: 15%;
-
   background-color: rgb(138, 138, 236);
   font-size: 20px;
+}
+
+.add i {
+  color: #fff;
+}
+
+.back {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 14px 16px;
+  border-radius: 15%;
+  background-color: rgb(209, 125, 125);
+  font-size: 20px;
+}
+
+.back i {
   color: #fff;
 }
 

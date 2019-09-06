@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/page.css" />
     <link rel="stylesheet" href="css/menu.css" />
+
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
   </head>
   <body>
     <!-- Page Container -->
@@ -40,21 +43,21 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="dashboard.html">
               <i class="fa fa-tachometer-alt"></i>
               Painel
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="customers.html">
               <i class="fa fa-users"></i>
               Clientes
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="vehicles.html">
               <i class="fa fa-truck"></i>
               Veículos
             </a>
@@ -79,7 +82,83 @@
       </div>
 
       <!-- Content -->
-      <div class="content"></div>
+      <div class="content">
+        <!-- Head -->
+        <div class="head">
+          <h1 class="page-title">Veículos cadastrados</h1>
+          <form>
+            <input type="text" placeholder="Pesquisar veículo" />
+            <button type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- /Head -->
+
+        <!-- Vehicles -->
+        <div class="vehicles">
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+
+          <div class="card">
+            <img src="img/tracker.jpg" alt="Chevrolet Tracker" />
+            <h1 class="title">Nome do veículo</h1>
+          </div>
+        </div>
+        <!-- /Vehicles -->
+      </div>
+
+      <!-- New Vehicle -->
+      <a href="new-vehicle.html" class="add">
+        <i class="fa fa-plus"></i>
+      </a>
     </div>
 
     <script src="js/menu.js"></script>

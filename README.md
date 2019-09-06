@@ -5,6 +5,7 @@ Projeto nasceu da ideia de um dos alunos (Nícolas) cujo o pai tem uma mecânica
 
 ## Requisitos
 
+- Dashboard de acompanhamento
 - Cadastro de clientes
 - Cadastro de veículos
 - Lançamento de gastos por veículos

@@ -104,14 +104,14 @@
               <div class="field">
                 <label for="state">Estado</label>
                 <select name="state" id="state">
-                  <option value="">Santa Catarina</option>
+                  <option value="SC">Santa Catarina</option>
                 </select>
               </div>
 
               <div class="field">
                 <label for="city">Cidade</label>
                 <select name="city" id="city">
-                  <option value="">Blumenau</option>
+                  <option value="Blumenau">Blumenau</option>
                 </select>
               </div>
             </div>
@@ -138,7 +138,9 @@
 
           <div class="row actions">
             <div class="field">
-              <button type="button" class="button">Salvar</button>
+              <button type="button" class="button" onclick="salvar()">
+                Salvar
+              </button>
             </div>
           </div>
         </form>
@@ -152,5 +154,7 @@
     </div>
 
     <script src="js/menu.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/new-customer.js"></script>
   </body>
 </html>

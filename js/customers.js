@@ -1,41 +1,43 @@
-(function() {
-  const table = document.getElementById("customers-table");
-  const tbody = table.getElementsByTagName("tbody")[0];
+// Buscar os clientes
+const table = document.getElementById("customers-table");
+const tbody = table.getElementsByTagName("tbody")[0];
 
-  // Buscar clientes
-  function buscarClientes() {
-    return [
-      { id: 1, nome: "Adrina", dataCadastro: "01/09/2019" },
-      { id: 2, nome: "Nícolas", dataCadastro: "02/09/2019" },
-      { id: 3, nome: "Thiago", dataCadastro: "03/09/2019" },
-      { id: 4, nome: "Nilson", dataCadastro: "04/09/2019" }
-    ];
-  }
+// Buscar clientes
+function buscarClientes() {
+  const encontrados = buscar("cliente");
+  return encontrados;
+}
 
-  function listarClientes() {
-    const clientes = buscarClientes();
+function listarClientes() {
+  const clientes = buscarClientes();
 
-    for (let i = 0; i < clientes.length; i++) {
-      const clienteAtual = clientes[i];
-      const linhaTabela = `
+  for (let i = 0; i < clientes.length; i++) {
+    const clienteAtual = clientes[i];
+    const linhaTabela = `
         <tr>
-          <td>${clienteAtual.nome}</td>
-          <td>${clienteAtual.dataCadastro}</td>
+          <td>${clienteAtual.name}</td>
+          <td>${moment(clienteAtual.created).format("DD/MM/YYYY")}</td>
           <td>
             <a href="#">
               <i class="fa fa-pen edit-customer"></i>
             </a>
 
-            <a href="#">
+            <a href="#" onclick="removerCliente(${i})">
               <i class="fa fa-user-times remove-customer"></i>
             </a>
           </td>
         </tr>
       `;
 
-      tbody.insertAdjacentHTML("beforeend", linhaTabela);
-    }
+    tbody.insertAdjacentHTML("beforeend", linhaTabela);
   }
+}
 
-  listarClientes();
-})();
+/**
+ * Remove o cliente com base no índice.
+ */
+function removerCliente(indice) {
+  console.log({ indice });
+}
+
+listarClientes();

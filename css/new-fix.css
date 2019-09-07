@@ -1,0 +1,49 @@
+.content {
+  width: 100%;
+}
+
+.fixes-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.new-fix {
+  padding: 20px;
+  background-color: #fff;
+
+  -webkit-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+}
+
+.new-fix .row {
+  border-bottom: 1px solid #ccc;
+}
+
+.new-fix .actions {
+  justify-content: flex-end;
+  /* background-color: #ccc; */
+}
+
+.fixes-data table {
+  margin: 0 20px;
+}
+
+.fixes-data table tfoot {
+  border-top: 2px solid #000;
+  font-size: 20px;
+  text-align: right;
+}
+
+.fixes-data tfoot td {
+  padding: 4px 0;
+}
+
+.fixes-data span {
+  font-size: 12px;
+}
+
+.fixes-data .remove {
+  color: red;
+}

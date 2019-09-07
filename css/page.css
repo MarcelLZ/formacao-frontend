@@ -6,6 +6,7 @@
 .content {
   margin: 0 0 0 50px;
   padding: 20px;
+  box-sizing: content-box;
 }
 
 .vehicles {

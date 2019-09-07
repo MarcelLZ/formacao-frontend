@@ -1,0 +1,44 @@
+.indicators {
+  display: flex;
+}
+
+/* NEW FIX */
+.new-fix {
+  padding: 40px;
+  font-size: 20px;
+  background-color: rgb(138, 138, 236);
+  margin: 10px;
+
+  -webkit-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+}
+
+.new-fix:link,
+.new-fix:visited {
+  color: #fff;
+}
+
+.total-customers {
+  padding: 40px;
+  font-size: 20px;
+  background-color: rgb(209, 125, 125);
+  margin: 10px;
+  color: #fff;
+
+  -webkit-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+}
+
+.total-vehicles {
+  padding: 40px;
+  font-size: 20px;
+  background-color: #f781d8;
+  margin: 10px;
+  color: #fff;
+
+  -webkit-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 22px -9px rgba(0, 0, 0, 0.56);
+}

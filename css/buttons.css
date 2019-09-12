@@ -31,3 +31,7 @@
   background-color: #229954;
   color: #fff;
 }
+
+.button.mini {
+  padding: 6px;
+}

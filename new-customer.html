@@ -99,20 +99,34 @@
 
           <fieldset>
             <legend>Dados de endereço</legend>
+            <div class="row">
+              <div class="field">
+                <label for="cep">CEP</label>
+                <input
+                  type="text"
+                  name="cep"
+                  id="cep"
+                  placeholder="Pesquise pelo CEP"
+                  maxlength="8"
+                />
+              </div>
+
+              <div class="field">
+                <button class="button mini" type="button" onclick="searchCEP()">
+                  Consultar
+                </button>
+              </div>
+            </div>
 
             <div class="row">
               <div class="field">
                 <label for="state">Estado</label>
-                <select name="state" id="state">
-                  <option value="SC">Santa Catarina</option>
-                </select>
+                <input type="text" name="state" id="state" />
               </div>
 
               <div class="field">
                 <label for="city">Cidade</label>
-                <select name="city" id="city">
-                  <option value="Blumenau">Blumenau</option>
-                </select>
+                <input type="text" name="city" id="city" />
               </div>
             </div>
 
@@ -138,7 +152,7 @@
 
           <div class="row actions">
             <div class="field">
-              <button type="button" class="button" onclick="salvar()">
+              <button type="reset" class="button" onclick="save()">
                 Salvar
               </button>
             </div>

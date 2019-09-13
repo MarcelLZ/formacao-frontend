@@ -78,3 +78,25 @@ function validate(dataToValidate) {
 
   return true;
 }
+
+async function loadCustomer() {
+  const urlFromBrowser = window.location.search;
+  const urlParams = new URLSearchParams(urlFromBrowser);
+
+  if (urlParams.has("id")) {
+    // console.log({ url: urlParams.get("id") });
+
+    const bolinha = await find("customer");
+    let foundCustomer = null;
+    for (let i = 0; i < bolinha.length; i++) {
+      if ((bolinha[i]._id = urlParams.get("id"))) {
+        foundCustomer = bolinha[i];
+      }
+    }
+
+    // Definir o valor no campo.
+    $name.value = foundCustomer.name;
+  }
+}
+
+loadCustomer();
